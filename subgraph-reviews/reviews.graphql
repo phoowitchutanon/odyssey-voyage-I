@@ -12,7 +12,17 @@ type Review {
 }
 
 type Mutation {
-  submitReview(locationReview: LocationReviewInput): SubmitReviewResponse
+  submitReview(locationReview: LocationReviewInput): SubmitReviewResponse {
+    # "The review is submitted to the database"
+    # code
+    # success
+    # message
+    # locationReview {
+    #   id
+    #   comment
+    #   rating
+    # }
+  }
 }
 
 input LocationReviewInput {
